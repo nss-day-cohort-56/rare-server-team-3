@@ -1,0 +1,24 @@
+[
+    {
+        "model": "app_api.comment",
+        "pk": 1,
+        "fields": {
+            "post_id": 1,
+            "author_id": 1,
+            "subject": "Who needs a Lyntroller?",
+            "content": "It's me, I need the Lyntroller. There's Lynt on all my sweaters",
+            "datetime": ""
+        }
+    },
+    {
+        "model": "app_api.comment",
+        "pk": 2,
+        "fields": {
+            "post_id": 1,
+            "author_id": 1,
+            "subject": "Where's my levelupApi?",
+            "content": "WHERE DID IT GO",
+            "datetime": ""
+        }
+    }
+]
