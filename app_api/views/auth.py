@@ -38,7 +38,7 @@ def register_user(request):
     '''Handles the creation of a new gamer for authentication
 
     Method arguments:
-      request -- The full HTTP request object
+    request -- The full HTTP request object
     '''
 
     # TODO: this is only adding the username and password, if you want to add in more user fields like first and last name update this code
