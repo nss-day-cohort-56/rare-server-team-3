@@ -1,0 +1,23 @@
+[
+    {
+        "model": "app_api.tags",
+        "pk": 1,
+        "fields": {
+            "label": "Uplifting"
+        }
+    },
+    {
+        "model": "app_api.tags",
+        "pk": 2,
+        "fields": {
+            "label": "Instructional"
+        }
+    },
+    {
+        "model": "app_api.tags",
+        "pk": 3,
+        "fields": {
+            "label": "Demoralizing"
+        }
+    }
+]
