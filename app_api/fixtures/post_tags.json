@@ -1,6 +1,6 @@
 [
     {
-        "model": "app_api.post_tags",
+        "model": "app_api.post_tag",
         "pk": 1,
         "fields": {
             "post": 1,
@@ -8,7 +8,7 @@
         }
     },
     {
-        "model": "app_api.post_tags",
+        "model": "app_api.post_tag",
         "pk": 2,
         "fields": {
             "post": 1,
@@ -16,7 +16,7 @@
         }
     },
     {
-        "model": "app_api.post_tags",
+        "model": "app_api.post_tag",
         "pk": 3,
         "fields": {
             "post": 2,

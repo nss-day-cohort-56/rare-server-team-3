@@ -11,7 +11,7 @@ class Post(models.Model):
     content = models.TextField(max_length=300)
     image_url = models.URLField(max_length=200)
     post_tags = models.ManyToManyField(
-        "Tags", through="PostTags", related_name="tags")
+        "Tag", through="PostTag", related_name="tags")
 
     @property
     def joined(self):
