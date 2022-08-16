@@ -1,0 +1,11 @@
+[
+    {
+        "model": "app_api.author",
+        "pk": 1,
+        "fields": {
+            "author": 1,
+            "bio": "I am user!",
+            "profile_image_url": ""
+        }
+    }
+]
