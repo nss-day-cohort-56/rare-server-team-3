@@ -1,0 +1,26 @@
+[
+    {
+        "model": "app_api.post_tags",
+        "pk": 1,
+        "fields": {
+            "post": 1,
+            "tag": 1
+        }
+    },
+    {
+        "model": "app_api.post_tags",
+        "pk": 2,
+        "fields": {
+            "post": 1,
+            "tag": 2
+        }
+    },
+    {
+        "model": "app_api.post_tags",
+        "pk": 3,
+        "fields": {
+            "post": 2,
+            "tag": 3
+        }
+    }
+]
