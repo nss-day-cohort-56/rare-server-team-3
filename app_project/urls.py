@@ -21,6 +21,7 @@ from app_api.views import register_user, login_user, CategoryView
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'categories', CategoryView, 'category')
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('register', register_user),
