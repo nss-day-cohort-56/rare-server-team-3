@@ -4,7 +4,7 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from app_api.models import Post, Model,Author, Category
+from app_api.models import Post, Author, Category
 
 
 class PostView(ViewSet):
