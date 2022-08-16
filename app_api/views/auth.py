@@ -55,7 +55,7 @@ def register_user(request):
     author = Author.objects.create(
         bio=request.data['bio'],
         author=new_user,
-        profile_image_url=request.data['profile_image_url']
+        profile_image_url=""
     )
     
     token = Token.objects.create(user=author.author)
