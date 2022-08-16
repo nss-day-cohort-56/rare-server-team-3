@@ -3,3 +3,4 @@ from .auth import register_user
 from .tag import Tag
 from .category_view import CategoryView
 from .comments import CommentView
+from .post import PostView
