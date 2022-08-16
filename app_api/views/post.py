@@ -6,7 +6,6 @@ from rest_framework.response import Response
 from rest_framework import serializers, status
 from app_api.models import Post, Author, Category
 
-
 class PostView(ViewSet):
     """Group project post view"""
 
@@ -20,7 +19,7 @@ class PostView(ViewSet):
             serializer = PostSerializer(post)
             return Response(serializer.data)
         except Post.DoesNotExist as ex:
-            return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
+            return Response({'message': ex.args[0]}, satus=status.HTTP_404_NOT_FOUND)
 
     def list(self, request):
         """Handle GET requests to get all posts
