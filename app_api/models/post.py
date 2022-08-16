@@ -2,7 +2,7 @@ from django.db import models
 
 class Post(models.Model):
 
-    Post = models.ForeignKey("Post", on_delete=models.CASCADE)
+    # Post = models.ForeignKey("Post", on_delete=models.CASCADE)
     title = models.CharField(max_length=55)
     publication_date = models.DateField()
     category = models.ForeignKey(
@@ -13,10 +13,10 @@ class Post(models.Model):
     post_tags = models.ManyToManyField(
         "Tag", through="PostTag", related_name="tags")
 
-    @property
-    def joined(self):
-        return self.__joined
+    # @property
+    # def joined(self):
+    #     return self.__joined
 
-    @joined.setter
-    def joined(self, value):
-        self.__joined = value
+    # @joined.setter
+    # def joined(self, value):
+    #     self.__joined = value
