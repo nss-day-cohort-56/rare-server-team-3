@@ -9,4 +9,4 @@ class Comment(models.Model):
         "Author", on_delete=models.CASCADE, related_name="comments_authored")
     subject = models.CharField(max_length=30)
     content = models.CharField(max_length=140)
-    datetime = models.DateTimeField()
+    datetime = models.DateTimeField(auto_now_add=True)
