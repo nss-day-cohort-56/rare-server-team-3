@@ -22,6 +22,7 @@ class TagView(ViewSet):
         except Tag.DoesNotExist as ex:
             return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND) 
 
+# Adding for list all tags PR! Will delete after. Please check on client to see that all tags in DB show up!
     def list(self, request):
         """Handle GET requests to get all game types
 
