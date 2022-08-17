@@ -43,6 +43,7 @@ class TagView(ViewSet):
         )
         serializer = TagSerializer(tag)
         return Response(serializer.data)
+# Adding for list edit Tag PR! Will delete after. Please check on client to see that tags are editable!
 
     def update(self, request, pk):
         """Handle PUT requests
@@ -57,7 +58,6 @@ class TagView(ViewSet):
         tag.save()
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
-# Adding for list delete Tag PR! Will delete after. Please check on client to see that tags are deletable!
 
     def destroy(self, request, pk):
         tag = Tag.objects.get(pk=pk)
