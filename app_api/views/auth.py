@@ -63,5 +63,5 @@ def register_user(request):
     # data = { 'token': token.key }
     # return Response(data)
     
-    data = { 'token': token.key, 'user_id': new_user.id }
+    data = { 'token': token.key, 'user_id': new_user.id, 'valid': True}
     return Response(data, status=status.HTTP_201_CREATED)
