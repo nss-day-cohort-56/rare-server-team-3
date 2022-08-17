@@ -1,5 +1,4 @@
 """app_project URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
 Examples:
@@ -17,6 +16,7 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 from app_api.views import register_user, login_user, CategoryView, PostView, CommentView, TagView
+
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'categories', CategoryView, 'category')
