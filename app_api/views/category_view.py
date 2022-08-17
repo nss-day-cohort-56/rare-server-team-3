@@ -49,3 +49,13 @@ class CategoryView(viewsets.ViewSet):
         category.save()
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
+
+    def destroy(self, request, pk):
+        """Handle DELETE requests for a category
+
+        Returns:
+        Response -- Empty body with 204 status code
+        """
+        category = Category.objects.get(pk=pk)
+        category.delete()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
