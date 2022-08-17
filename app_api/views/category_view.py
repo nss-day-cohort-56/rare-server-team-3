@@ -1,6 +1,6 @@
 from unicodedata import category
 from app_api.models import Category
-from rest_framework import serializers, viewsets
+from rest_framework import serializers, viewsets, status
 from rest_framework.response import Response
 from rest_framework.viewsets import ViewSet
 
@@ -34,3 +34,18 @@ class CategoryView(viewsets.ViewSet):
         )
         serializer = CategorySerializer(category)
         return Response(serializer.data)
+
+    def update(self, request, pk):
+        """Handle PUT requests for a category
+
+        Returns:
+        Response -- Empty body with 204 status code
+        """
+
+        category = Category.objects.get(pk=pk)
+        category.label = request.data["label"]
+
+        category.organizer = category
+        category.save()
+
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
