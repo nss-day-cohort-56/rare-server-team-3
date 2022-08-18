@@ -1,5 +1,3 @@
-from cgitb import text
-from typing import Text
 from xml.dom.minidom import CharacterData
 from django.db import models
 from django.contrib.auth.models import User
