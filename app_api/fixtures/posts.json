@@ -3,13 +3,90 @@
 		"model": "app_api.post",
 		"pk": 1,
 		"fields": {
-			"category": 1,
 			"author": 1,
-			"title": "So happy",
-			"content": "Today was a great day!",
-			"image_url": "https://static.onecms.io/wp-content/uploads/sites/13/2015/04/05/featured.jpg//static.onecms.io/wp-content/uploads/sites/13/2015/04/05/featured.jpg",
-			"publication_date": "2022-04-04",
-			"post_tags": []
+			"category": 1,
+			"title": "test",
+			"publication_date": "2022-08-14",
+			"image_url": "https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg",
+			"content": "initial test",
+			"post_tags": [
+				1
+			]
 		}
-	}
+	},
+	{
+		"model": "app_api.post",
+		"pk": 2,
+		"fields": {
+			"author": 1,
+			"category": 1,
+			"title": "Nature",
+			"publication_date": "2022-08-18",
+			"image_url": "https://swall.teahub.io/photos/small/21-218810_beautiful-wallpapers-download-for-mobile-download-beautiful-images.jpg",
+			"content": " Nature is beautiful!",
+			"post_tags": [
+				1
+			]
+		}
+	},
+	{
+		"model": "app_api.post",
+		"pk": 3,
+		"fields": {
+			"author": 1,
+			"category": 1,
+			"title": "Coding master",
+			"publication_date": "2022-08-15",
+			"image_url": "https://st2.depositphotos.com/1006472/5665/i/600/depositphotos_56658541-stock-photo-faceless-hooded-anonymous-computer-hacker.jpg",
+			"content": " Getting serious hacker man vibes!",
+			"post_tags": [
+				1
+			]
+		}
+	},
+	{
+		"model": "app_api.post",
+		"pk": 4,
+		"fields": {
+			"author": 2,
+			"category": 1,
+			"title": "Going to the library!",
+			"publication_date": "2022-08-17",
+			"image_url": "https://burst.shopifycdn.com/photos/person-holds-a-book-over-a-stack-and-turns-the-page.jpg?width=1200&format=pjpg&exif=0&iptc=0",
+			"content": " Reading is a true treasure! What an enchanting experience it is!",
+			"post_tags": [
+				1
+			]
+		}
+	},
+		{
+			"model": "app_api.post",
+			"pk": 5,
+			"fields": {
+				"author": 2,
+				"category": 1,
+				"title": "Went to the book store!",
+				"publication_date": "2022-08-17",
+				"image_url": "https://burst.shopifycdn.com/photos/person-holds-a-book-over-a-stack-and-turns-the-page.jpg?width=1200&format=pjpg&exif=0&iptc=0",
+				"content": " Purchased lots of great books!!!",
+				"post_tags": [
+					1
+				]
+			}
+		},
+		{
+			"model": "app_api.post",
+			"pk": 6,
+			"fields": {
+				"author": 2,
+				"category": 2,
+				"title": "Strawberry Cake 🍰",
+				"publication_date": "2022-08-18",
+				"image_url": "https://preppykitchen.com/wp-content/uploads/2022/05/Strawberry-Cake-Recipe-Card.jpg",
+				"content": "Strawberry cake is the best kind of cake! It is so good!!!",
+				"post_tags": [
+					9
+				]
+			}
+		}
 ]

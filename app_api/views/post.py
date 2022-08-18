@@ -47,17 +47,17 @@ class PostView(ViewSet):
             content=request.data["content"],
             author=author,
             image_url=request.data["image_url"]
-            # post_tags=request.data["post_tags"]
+            
         )
         serializer = PostSerializer(post)
         return Response(serializer.data)
 
-    def update(self, request, p0iuk):
+    def update(self, request, pk):
         """Handle PUT requests for a post
         Returns:
             Response -- Empty body with 204 status code
         """
-        author = Author.objects.get(user=request.auth.user)
+        author = Author.objects.get(author=request.auth.user)
         category = Category.objects.get(pk=request.data["category"])
         post = Post.objects.get(pk=pk)
         post.title = request.data["title"]
@@ -66,6 +66,8 @@ class PostView(ViewSet):
         post.image_url = request.data["image_url"]
         category = category
         author = author
+        post.save()
+        post.post_tags.set(request.data["tags"])
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
     def destroy(self, request, pk):
