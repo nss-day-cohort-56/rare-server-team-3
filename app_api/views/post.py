@@ -30,6 +30,9 @@ class PostView(ViewSet):
         category = request.query_params.get('category', None)
         if category is not None:
             posts = posts.filter(category_id=category)
+        author = request.query_params.get('author', None)
+        if author is not None:
+            posts = posts.filter(author_id=author)
         serializer = PostSerializer(posts, many=True)
         return Response(serializer.data)
 

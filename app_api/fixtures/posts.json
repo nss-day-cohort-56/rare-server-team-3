@@ -89,4 +89,21 @@
 				]
 			}
 		}
+<<<<<<< HEAD
+=======
+	},
+	{
+		"model": "app_api.post",
+		"pk": 2,
+		"fields": {
+			"category": 1,
+			"author": 2,
+			"title": "TRIUMPH",
+			"content": "Sorting by users for fun and profit",
+			"image_url": "https://www.macmillandictionary.com/external/slideshow/thumb/142242_thumb.jpg",
+			"publication_date": "2022-05-04",
+			"post_tags": []
+		}
+	}
+>>>>>>> 16486e40cebc24bcba826570e394bdf089208629
 ]
