@@ -7,5 +7,14 @@
             "bio": "I am user!",
             "profile_image_url": ""
         }
+    },
+    {
+        "model": "app_api.author",
+        "pk": 2,
+        "fields": {
+            "author": 2,
+            "bio": "ME!",
+            "profile_image_url": ""
+        }
     }
 ]
