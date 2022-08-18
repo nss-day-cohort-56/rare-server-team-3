@@ -2,6 +2,7 @@ from app_api.models import Author
 from rest_framework import serializers, viewsets, status
 from rest_framework.response import Response
 from rest_framework.viewsets import ViewSet
+from django.db.models.functions import Lower
 
 class AuthorSerializer(serializers.ModelSerializer):
     """JSON serializer for category
@@ -29,7 +30,7 @@ class AuthorView(viewsets.ViewSet):
 
     def list(self, request):
         """Handle GET requests to get all author"""
-        author = Author.objects.order_by('author__first_name')
+        author = Author.objects.order_by(Lower('author__first_name'))
         serializer = AuthorSerializer(author, many=True)
         return Response(serializer.data)
 
