@@ -5,6 +5,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
 from app_api.models import Post, Author, Category
+from datetime import date
 
 class PostView(ViewSet):
     """Group project post view"""
@@ -41,17 +42,18 @@ class PostView(ViewSet):
         Returns
             Response -- JSON serialized post instance
         """
-        author = Author.objects.get(user=request.auth.user)
+        author = Author.objects.get(author=request.auth.user)
         category = Category.objects.get(pk=request.data["category"])
         post = Post.objects.create(
             title=request.data["title"],
-            publication_date=request.data["publication_date"],
+            publication_date=date.today(),
             category=category,
             content=request.data["content"],
             author=author,
-            image_url=request.data["image_url"]
-            
+            image_url=request.data["image_url"],
+            # post_tags=request.data["tags"]
         )
+        post.post_tags.set(request.data["tags"])
         serializer = PostSerializer(post)
         return Response(serializer.data)
 

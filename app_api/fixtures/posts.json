@@ -59,42 +59,39 @@
 			]
 		}
 	},
-		{
-			"model": "app_api.post",
-			"pk": 5,
-			"fields": {
-				"author": 2,
-				"category": 1,
-				"title": "Went to the book store!",
-				"publication_date": "2022-08-17",
-				"image_url": "https://burst.shopifycdn.com/photos/person-holds-a-book-over-a-stack-and-turns-the-page.jpg?width=1200&format=pjpg&exif=0&iptc=0",
-				"content": " Purchased lots of great books!!!",
-				"post_tags": [
-					1
-				]
-			}
-		},
-		{
-			"model": "app_api.post",
-			"pk": 6,
-			"fields": {
-				"author": 2,
-				"category": 2,
-				"title": "Strawberry Cake 🍰",
-				"publication_date": "2022-08-18",
-				"image_url": "https://preppykitchen.com/wp-content/uploads/2022/05/Strawberry-Cake-Recipe-Card.jpg",
-				"content": "Strawberry cake is the best kind of cake! It is so good!!!",
-				"post_tags": [
-					9
-				]
-			}
+	{
+		"model": "app_api.post",
+		"pk": 5,
+		"fields": {
+			"author": 2,
+			"category": 1,
+			"title": "Went to the book store!",
+			"publication_date": "2022-08-17",
+			"image_url": "https://burst.shopifycdn.com/photos/person-holds-a-book-over-a-stack-and-turns-the-page.jpg?width=1200&format=pjpg&exif=0&iptc=0",
+			"content": " Purchased lots of great books!!!",
+			"post_tags": [
+				1
+			]
 		}
-<<<<<<< HEAD
-=======
 	},
 	{
 		"model": "app_api.post",
-		"pk": 2,
+		"pk": 6,
+		"fields": {
+			"author": 2,
+			"category": 2,
+			"title": "Strawberry Cake 🍰",
+			"publication_date": "2022-08-18",
+			"image_url": "https://preppykitchen.com/wp-content/uploads/2022/05/Strawberry-Cake-Recipe-Card.jpg",
+			"content": "Strawberry cake is the best kind of cake! It is so good!!!",
+			"post_tags": [
+				9
+			]
+		}
+	},
+	{
+		"model": "app_api.post",
+		"pk": 7,
 		"fields": {
 			"category": 1,
 			"author": 2,
@@ -105,5 +102,5 @@
 			"post_tags": []
 		}
 	}
->>>>>>> 16486e40cebc24bcba826570e394bdf089208629
+
 ]
