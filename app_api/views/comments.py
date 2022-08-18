@@ -53,18 +53,17 @@ class CommentView(ViewSet):
         Response -- Empty body with 204 status code
         """
 
-        event = Event.objects.get(pk=pk)
-        event.description = request.data["description"]
-        event.date = request.data["date"]
-        event.time = request.data["time"]
+        comment = Comment.objects.get(pk=pk)
+        comment.subject = request.data["subject"]
+        comment.content = request.data["content"]
 
-        game = Game.objects.get(pk=request.data["game"])
-        event.game = game
+        comment.save()
 
-        organizer = Gamer.objects.get(pk=request.data["organizer"])
-        event.organizer = organizer
-        event.save()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
 
+    def destroy(self, request, pk):
+        comment = Comment.objects.get(pk=pk)
+        comment.delete()
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
 class CommentSerializer(serializers.ModelSerializer):
@@ -72,5 +71,5 @@ class CommentSerializer(serializers.ModelSerializer):
     """
     class Meta:
         model = Comment
-        fields = ('id', 'post_id', 'author_id', 'subject', 'content', 'datetime')
-        depth = 1
+        fields = ('id', 'post', 'author', 'subject', 'content', 'datetime')
+        depth = 2
